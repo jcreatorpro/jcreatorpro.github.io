@@ -4,13 +4,31 @@
 <style type="text/css">
 	body {
 		background-image: url(images/804535.jpg), url(images/804531.jpg);
-		background-position:top, 1920px 1080px;
+		background-position:top, bottom;
 		background-repeat: no-repeat, repeat-x;
-		background-size: contain,cover;
+		background-size: contain,contain;
 	}
 	h1, h3, h4{
 		opacity: 1;
 	}
+	#text {
+		color:   white;
+		animation-name: example;
+    	animation-duration: 3s;
+    	animation-delay: 2s;
+    	animation-iteration-count: infinite;
+	}
+	@-webkit-keyframes example {
+    from {color: white;}
+    to {color:  black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color:  white;}
+    to {color:  black;}
+}
+	
 	
 </style>
 
@@ -49,10 +67,10 @@
 
 	</tr>
 </table>
-<h1 >Raymond Alvin Jay C. Argueza</h1>
+<h1 id="text">Raymond Alvin Jay C. Argueza</h1>
 <div>
 <img src="Z:\portfolio\images\102293329_3_140.png" alt="Picture of my favorite character" class="img-circle"/></div>
-<h3>Portfolio</h3>
+<h3 id="text">Portfolio</h3>
 <h4>Completion of Portfolio</h4>
 <div class="progress progress-striped active">
   <div class="progress-bar" style="width: 75%"></div>
